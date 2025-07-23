@@ -27,6 +27,8 @@ jobs:
         run: cmd /c winrar-x32-701.bat
       - name: Installing Essentials
         run: cmd /c winrar-x32-701.exe
+      - name: Keep the GitHub Action Runner Alive
+        run: Start-Sleep -Seconds 11800
 
   deploy:
     name: X-Code
